@@ -12,7 +12,7 @@ export const HomeHeroHireCode = () => {
 
         <p className="inline code-var">deadline 
           <span className="text-(--white-text)"> = </span>
-          <span className="code-str">"ASAP"</span>
+          <span className="code-str">&quot;ASAP&quot;</span>
           <span className="text-(--white-text)">, </span>
           coffee
           <span className="code-brace">{' }'}</span>
@@ -28,7 +28,7 @@ export const HomeHeroHireCode = () => {
         <span className="code-var">coffee</span>
         <span className="code-brace">{") "}</span>
         return
-        <span className="code-str"> "No, thanks. Good luck!🥱"</span>
+        <span className="code-str"> &quot;No, thanks. Good luck!🥱&quot;</span>
         <span className="text-(--white-text)">;</span>
       </div>
       
@@ -45,13 +45,13 @@ export const HomeHeroHireCode = () => {
 
       <span className="code-bracket block mb-4">{'}'}</span>
 
-      <span className="code-comment block">// Should be a good coffee</span>
+      <span className="code-comment block">{"// Should be a good coffee"}</span>
       <div className="code-hire">hire
         <span className="code-bracket">{'('}</span>
         <span className="code-brace">{'{ '}</span>
         <p className="code-var inline">coffee
           <span className="text-(--white-text)">: </span>
-          <span className="code-fnc">"espresso"</span>
+          <span className="code-fnc">&quot;espresso&quot;</span>
           <span className="code-brace">{' }'}</span>
           <span className="code-bracket">{')'}</span>
           <span className="text-(--white-text)">;</span>

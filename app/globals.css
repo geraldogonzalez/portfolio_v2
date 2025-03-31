@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020618;
+  --foreground: #90A1B9;
+  --stroke: #314158;
+  --body-background: #0F172B;
+  --active-link: #FFB86A;
+  --link-text: #FFA1AD;
+  --white-text: #F8FAFC;
+
+  --code-variable-text: #21DAFF;
+  --code-function-text: #648BFF;
+  --code-string-text: #F18556;
+  --code-stt-text: #EB90FF;
+  --code-comment-text: #42976E;
+  --code-brace-text: #C66AFF;
+  --code-bracket-text: #FFD400;
+  --code-hire-text: #FFF0A3;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  background: var(--body-background);
+  height: calc(100dvh - 32px);
+}
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.opct-transition {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.opct-transition:hover {
+  opacity: 0.6;
+}
+
+.default-stroke {
+  border-color: var(--stroke);
+  border-width: 1px;
+}
+
+.typing-effect {
+  width: 0;
+  animation: typing 8s steps(19) forwards, blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  0% {
+    width: 0
+  }
+
+  25% {
+    width: 0
+  }
+
+  50% {
+    width: 19ch;
+  }
+  
+  100% {
+    width: 19ch;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.code-var {
+  color: var(--code-variable-text);
+}
+
+.code-fnc {
+  color: var(--code-function-text);
+}
+
+.code-str {
+  color: var(--code-string-text);
+}
+
+.code-statement {
+  color: var(--code-stt-text);
+}
+
+.code-comment {
+  color: var(--code-comment-text);
+}
+
+.code-brace {
+  color: var(--code-brace-text);
+}
+
+.code-bracket {
+  color: var(--code-bracket-text);
+}
+
+.code-hire {
+  color: var(--code-hire-text);
+}
+
+.code-shadow {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .75));
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (min-width: 768px) {
+
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: var(--active-link);
+    transition: all 0.5s;
+  }
+
+  .nav-link.active-link:before {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 1024) {
+
+  body {
+    height: calc(100dvh - 140px);
+  }
+  
+  .container {
+    padding: 0 2rem;
+    max-width: 1210px;
+  }
+}

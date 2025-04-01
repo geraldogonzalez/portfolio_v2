@@ -23,6 +23,7 @@ export const MenuButton = () => {
     <button
       className="cursor-pointer opct-transition flex items-center justify-center w-full md:hidden"
       onClick={handleToggleNav}
+      aria-label="Menu button"
     >
       { Icon }
     </button>

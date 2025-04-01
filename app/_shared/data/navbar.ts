@@ -29,17 +29,17 @@ export const footerItems: FooterItems = {
   footerTitle: "const socials = ",
   socialLinks: [
     {
-      label: "LinkedIn",
+      label: "LinkedIn link",
       href: "https://www.linkedin.com/in/geraldo-gonz%C3%A1lez-326898178/",
       Icon: RiLinkedinFill
     },
     {
-      label: "Instagram",
+      label: "Instagram link",
       href: "https://www.instagram.com/ggz.dev/",
       Icon: RiInstagramLine
     },
     {
-      label: "GitHub",
+      label: "GitHub link",
       href: "https://github.com/geraldogonzalez",
       Icon: RiGithubFill,
       styles: "md:hidden"

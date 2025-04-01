@@ -16,11 +16,12 @@ export const Footer = () => {
 
       <nav className="flex h-full">
         <span className="hidden md:inline-block leading-[55px] mr-2.5 text-xl">{"["}</span>
-        { socialLinks.map(({ href, Icon, styles }, index) => (
+        { socialLinks.map(({ href, Icon, label, styles }, index) => (
           <Link
             key={index}
             href={href}
             className={`border-(--stroke) border-l opct-transition py-3 px-4 h-full block first-of-type:md:border-x-[1px] md:border-r md:border-l-0 ${ styles ? styles : "" }`}
+            aria-label={label}
             target="_blank"
           >
             <Icon size={24} />
@@ -31,6 +32,7 @@ export const Footer = () => {
         <Link
           href={githubObj.href}
           target="_blank"
+          aria-label={githubObj.label}
           className="hidden md:flex border-(--stroke) border-l opct-transition py-3 px-4 h-full gap-2 items-center ml-auto"
         >
           <span>@geraldogonzalez</span>

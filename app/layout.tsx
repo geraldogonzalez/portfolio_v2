@@ -7,7 +7,7 @@ import { MainLayout } from "./_shared/layouts/MainLayout";
 
 export const metadata: Metadata = {
   title: "Geraldo González | Web Developer",
-  description: "Personal portfolio of Geraldo González",
+  description: 'Desarrollador frontend con experiencia en React, Next.js y más.',
 };
 
 export default function RootLayout({ children }: HOCsProps) {

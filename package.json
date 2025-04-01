@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && sitemap-dev && sitemap-com",
+    "build": "next build && npm run sitemap-dev && npm run sitemap-com",
     "start": "next start",
     "lint": "next lint",
     "sitemap-dev": "next-sitemap --config next-sitemap.config.dev-domain.js",

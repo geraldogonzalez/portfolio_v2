@@ -29,7 +29,6 @@ export const HomeHeroHireCode = () => {
         <span className="code-brace">{") "}</span>
         return
         <span className="code-str"> &quot;No, thanks. Good luck!🥱&quot;</span>
-        <span className="text-(--white-text)">;</span>
       </div>
       
       <div className="indent-4 mb-4 code-statement">
@@ -40,7 +39,6 @@ export const HomeHeroHireCode = () => {
         <span className="code-fnc">{" }"}</span>
         
         <span className="code-str">!☕🚀`</span>
-        <span className="text-(--white-text)">;</span>
       </div>
 
       <span className="code-bracket block mb-4">{'}'}</span>
@@ -51,10 +49,9 @@ export const HomeHeroHireCode = () => {
         <span className="code-brace">{'{ '}</span>
         <p className="code-var inline">coffee
           <span className="text-(--white-text)">: </span>
-          <span className="code-fnc">&quot;espresso&quot;</span>
+          <span className="code-str">&quot;espresso&quot;</span>
           <span className="code-brace">{' }'}</span>
           <span className="code-bracket">{')'}</span>
-          <span className="text-(--white-text)">;</span>
         </p>
       </div>
     </code>

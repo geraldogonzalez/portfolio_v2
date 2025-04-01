@@ -9,7 +9,7 @@ Bienvenido a mi [portafolio personal](https://geraldog.dev/) en su versión 2 ([
 - [Tailwind CSS 4](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
-- [Remix Icon](https://remixicon.com/) con `@remixicon/react`
+- [Remix Icon](https://remixicon.com/)
 - [next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
 
 ## 🌐 SEO y Accesibilidad

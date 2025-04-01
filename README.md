@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑 Portafolio Personal v2.0
 
-## Getting Started
+Bienvenido a mi [portafolio personal](https://geraldog.dev/) en su versión 2 ([versión 1 aquí](https://github.com/geraldogonzalez/portafolio)), desarrollado con [Next.js](https://nextjs.org/) y [Tailwind CSS](https://tailwindcss.com/). En este portafolio tengo pensado mostrar algunos de mis proyectos, habilidades, experiencia como desarrollador web y, seguramente, algunas cosas más.
 
-First, run the development server:
+## 🚀 Tecnologías utilizadas
+
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/)
+- [Remix Icon](https://remixicon.com/) con `@remixicon/react`
+- [next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
+
+## 🌐 SEO y Accesibilidad
+
+Este portafolio está optimizado para los motores de búsqueda y la accesibilidad. Algunas de las prácticas implementadas:
+
+- Uso de etiquetas semánticas.
+- Archivos `sitemap.xml` y `robots.txt` generados automáticamente para varios dominios.
+- Componentes accesibles (nombres visibles o `aria-label`, navegación por teclado, etc.).
+- Contraste adecuado y foco visible en elementos interactivos.
+
+## 💻 Scripts disponibles
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev           # Ejecuta el entorno de desarrollo
+npm run build         # Compila el proyecto para producción y genera los sitemaps
+npm run start         # Inicia el servidor de producción
+npm run lint          # Ejecuta ESLint
+npm run sitemap-dev   # Genera el sitemap para dominio de desarrollo
+npm run sitemap-com   # Genera el sitemap para dominio principal
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Estructura del proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+├── 📁 app/
+│   ├── 📁 _components/      # Componentes reutilizados.
+│   ├── 📁 _context/         # Contiene los contextos globales de React (React Context API).
+│   ├── 📁 _hooks/           # Hooks personalizados reutilizables para encapsular lógica.
+│   └── 📁 _shared/          # Recursos compartidos (componentes, datos estáticos, interfaces TypeScript y layouts) que usaré en múltiples partes.
+│       ├── 📁 components/
+│       ├── 📁 data/
+│       ├── 📁 interfaces/
+│       └── 📁 layouts/
+│   ├── 📁 about/            # Esta página comunicará quién soy, qué hago y qué me apasiona.
+│   └── 📁 contact/          # Aquí incluiré un formulario para que puedan escribirme fácilmente reclutadores, colegas o clientes.
+├── 📁 public/               # Archivos estáticos.
+├── eslint.config.js         # Configuración de ESLint.
+├── next-sitemap.config.*    # Archivos de configuración por dominio.
+├── README.md                # Documenta la estructura, tecnologías, funcionalidades y objetivos de este proyecto.
+```

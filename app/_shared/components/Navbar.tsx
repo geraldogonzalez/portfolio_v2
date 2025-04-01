@@ -1,4 +1,4 @@
-import { useNavbar } from "@/app/hooks";
+import { useNavbar } from "@/app/_hooks";
 
 import { NavbarLink } from "../data";
 import { NavbarItem } from "./";
